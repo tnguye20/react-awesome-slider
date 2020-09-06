@@ -39,12 +39,12 @@ export default class Media extends React.Component {
 //             controls
 //           />
           <div
+            className="videoContainer"
             dangerouslySetInnerHTML={{
               __html: `
               <video
                 title="${ media.title || media[`data-title`] }"
                 src="${source}"
-                loop
                 muted
                 autoplay
                 playsinline
